@@ -5,13 +5,6 @@ from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel, set_t
 from agents.run import RunConfig
 from pydantic import BaseModel
 
-# class UserContext(BaseModel):
-#     name: Optional[str] = None
-#     is_premium_user: bool = False
-#     issue_type: Optional[str] = None 
-
-# ENVIRONMENT VARIABLES & CONFIGURATION
-
 load_dotenv()
 
 set_tracing_disabled(disabled = True)
