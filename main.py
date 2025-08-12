@@ -85,7 +85,7 @@ def guard_output(text: str) -> str:
     out = text
     for w in BANNED_WORDS:
         out = re.sub(rf"(?i)\b{re.escape(w)}\b", "[redacted]", out)
-    # enforce length limit
+    
     if len(out) > 1200:
         out = out[:1196] + "..."
     return out.strip()
